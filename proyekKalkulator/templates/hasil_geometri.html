@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Deret Geometri</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="judul">Hasil Deret Geometri</h1>
+        <ul class="hasil">
+        {% for suku in dg %}
+            <li>{{ suku }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

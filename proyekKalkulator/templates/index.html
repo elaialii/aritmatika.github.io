@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pilihan Deret</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="judul">Menghitung Deret Aritmatika dan Geometri</h1>
+        <div class="form-container">
+            <form action="/aritmatika" method="post">
+                <h2 class="subjudul">Deret Aritmatika</h2>
+                <div class="form-group">
+                    <label for="a">Suku Awal (a):</label>
+                    <input type="number" id="a" name="a" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="b">Beda (b):</label>
+                    <input type="number" id="b" name="b" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="n">Jumlah Suku (n):</label>
+                    <input type="number" id="n" name="n" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Hitung Aritmatika</button>
+            </form>
+            <form action="/geometri" method="post">
+                <h2 class="subjudul">Deret Geometri</h2>
+                <div class="form-group">
+                    <label for="a">Suku Awal (a):</label>
+                    <input type="number" id="a" name="a" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="b">Rasio (b):</label>
+                    <input type="number" id="b" name="b" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="n">Jumlah Suku (n):</label>
+                    <input type="number" id="n" name="n" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Hitung Geometri</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
